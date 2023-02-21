@@ -1,14 +1,19 @@
-public class Employee{
-    char name;
-    int salary;
-    public static void main(String[] args){
+public class employee {
+    private double salary;
+    private String name;
+    public employee(String name,double salary){
+        this.name=name;
+        this.salary=salary;
 
-        Employee e1=new Employee();
-        e1.name="dipto";
-        e1.salary=230000;
-        System.out.println("Name of Emplymee: "+e1.name);
-        System.out.println("Salary of Emplymee: "+e1.salary);
+    }
+    String getname(){
+        return name;
+    }
+    double aa(){
+        return salary;
+    }
+    public static void main(String[] args){
+        employee e1=new employee( "Naeem", 100000);
+        System.out.println(e1.aa());
     }
 }
-    }
-            }
